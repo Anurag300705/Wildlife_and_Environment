@@ -1,0 +1,53 @@
+/* Navigation bar styling */
+nav {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out items evenly */
+    align-items: center; /* Center items vertically */
+    background: rgb(0,0,0);background: linear-gradient(0deg, rgb(0, 0, 0) 40%, rgb(60,64,67) 100%);
+    padding: 0 1rem; /* Add padding on left and right */
+    margin: 0; /* Remove default margin */
+    height: 11vh;
+    width: 100%;
+  }
+  
+  /* Styling for the navigation title */
+  nav .title {
+    text-decoration: none; /* Remove underline from text */
+    font-size: 1.5rem; /* Set font size */
+    font-weight: bold; /* Make text bold */
+    color: white; /* Set text color */
+    margin-right: auto; /* Push the title to the left */
+    padding-left: 25px;
+
+  }
+  
+  /* Styling for the unordered list within the navigation */
+  nav ul {
+    display: flex; /* Use flexbox for layout */
+    margin-left: auto; /* Push the list to the right */
+    padding: 0; /* Remove padding */
+    padding-right: 50px;
+    
+  }
+  
+  /* Styling for the list items within the unordered list */
+  nav ul li {
+    list-style: none; /* Remove bullet points from list items */
+  
+  }
+  
+  /* Styling for the anchor tags within the list items */
+  nav ul li a {
+    display: block; /* Make the link a block element */
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Set link color */
+    padding: 0.5rem; /* Add padding around the link */
+    margin: 0 0.5rem; /* Add margin on left and right */
+    border-radius: 0.5rem; /* Round the corners */
+  }
+  
+  /* Remove background gap at the top and sides of the nav bar */
+  body {
+    margin: 0; /* Remove default body margin */
+  }
+  
