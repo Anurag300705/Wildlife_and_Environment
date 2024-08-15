@@ -1,0 +1,28 @@
+.sec_1{
+    margin-top: 70px;
+  }
+
+  #visit{
+    letter-spacing: 1px;
+    color: yellow;
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  
+  #btn{
+    border: transparent;
+    background-color: transparent;
+    color:red;
+    font-size: 20px;
+    font-family: Cambria ;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 2px 3px yellowgreen;
+  }
+  
+  #btn:hover{
+    color:blue ;
+    cursor: pointer;
+  
+  }
+  
