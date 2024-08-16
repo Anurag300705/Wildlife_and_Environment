@@ -1,7 +1,7 @@
-import "./App.css";
+
 import Data_link from "./data_link";
 import Table from "./table";
-import './App.css';
+import './Newborn.css';
 
 function NEW_BORN() {
   return (
