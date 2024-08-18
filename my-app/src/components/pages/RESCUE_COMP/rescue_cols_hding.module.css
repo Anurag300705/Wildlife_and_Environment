@@ -1,0 +1,31 @@
+.cols_hding{
+    border: 1px solid black;
+    font-size: 20px;
+    color: grey;
+    text-transform: uppercase;
+  
+  }
+
+  .serial{
+    width: 50px;
+  
+  }
+  
+  .date{
+    width: 200px;
+  }
+  
+  .species{
+    width: 400px;
+  }
+  
+  .species_count{
+    width: 200px;
+  }
+  .ratio{
+    width: 150px;
+  }
+
+  .receive{
+    width: 350px;
+  }

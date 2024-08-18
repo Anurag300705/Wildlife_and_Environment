@@ -8,7 +8,6 @@
 // import Service from './components/pages/Service';
 // import ContactUs from './components/pages/ContactUs';
 
-
 // function App() {
 //   return (
 //     <>
@@ -30,15 +29,33 @@
 // }
 
 // export default App
-import Exchange from "./components/pages/EXCHANGE_COMP/EXCHANGE";
 
+
+
+
+
+
+// // EXCHANGE_COMP JSX CODE
+// import Exchange from "./components/pages/EXCHANGE_COMP/EXCHANGE";
+
+// function App() {
+//   return <Exchange />;
+// }
+
+// export default App;
+
+
+
+
+
+
+//RESCUE_COMP jsx code
+import Rescue from "./components/pages/RESCUE_COMP/RESCUE";
 
 function App() {
- 
-
   return (
-    <Exchange/>
-  )
+    <Rescue/>
+  );
 }
 
 export default App;
