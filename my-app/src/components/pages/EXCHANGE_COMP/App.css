@@ -1,0 +1,70 @@
+
+#hding{
+  font-size: 30px;
+  font-family: sans-serif;
+  font-family: Cambria ;
+  
+  color: yellowgreen;
+  text-shadow: 1px 2px 1px black ;
+}
+
+
+.data_table{
+  background-color:aqua;
+  border: 2px solid black;
+  width: 100%;
+  display: inline-flexbox;
+
+  
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+
+.T_body{
+
+  font-size: 20px;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+  
+}
+
+.serial{
+  width: 20px;
+  text-align: center;
+}
+
+.species{
+  width: 500px;
+  text-align: center;
+}
+
+.firm{
+  text-align: center;
+}
+
+.ratio{
+  text-align: center;
+  width: 100px;
+}
+
+.date_arrival{
+  text-align: center;
+  width: 150px;
+}
+
+#odd_row{
+  background-color: white;
+}
+
+#even_row{
+  background-color:bisque ;
+}

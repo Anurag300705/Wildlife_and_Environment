@@ -1,0 +1,22 @@
+.T_body{
+
+    font-size: 20px;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  
+    
+  }
+  
+  
+  #odd_row{
+    background-color: aqua;
+  }
+  
+  #even_row{
+    background-color:white;
+  }
+  
