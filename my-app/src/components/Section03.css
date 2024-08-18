@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    /* margin-top: 600px; */
+    
+    background-color: rgb(217, 217, 217);
+    height: 300px;
+}
+
+
+.heading{
+    padding-top: 10px;
+}
+#para{
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: solid;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    
+}
+
+.boxes{
+    padding-left: 200px;
+    padding-right: 200px;
+    display: flex;
+    gap: 150px;
+}
+#box1{
+    
+    height: 200px ;
+    width: 400px;
+    background-image: url(77005.jpg);
+    background-size: cover;
+    background-color: rgb(117, 117, 117) ;
+    border: 2px solid black;
+    border-radius: 15px;
+
+
+}
+
+#box2{
+    height: 200px ;
+    width: 400px;
+    background-image: url(know.jpg);
+    background-size: cover;
+    background-color: rgb(117, 117, 117) ;
+    border: 2px solid black;
+    border-radius: 15px;
+
+}
+
+#para_box1{
+    color: rgb(239, 239, 239);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+#quiz{
+    margin: 100px 100px 0 100px;
+
+    height: 30px;
+    width: 200px;
+    background-color: rgb(120, 140, 174);
+    border: 2px solid transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(239, 239, 239);
+    box-shadow: 0 0 20px rgb(26, 67, 113);
+      
+    
+}
+
+#para_box2{
+    color: rgb(239, 239, 239);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+#about{
+    margin: 100px 100px 0 100px;
+    /* margin-left: ; */
+    height: 30px;
+    width: 200px;
+    background-color: rgb(120, 140, 174);
+    border: 2px solid transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(239, 239, 239);
+    box-shadow: 0 0 20px rgb(26, 67, 113);
+
+    
+    
+    
+}
