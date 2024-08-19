@@ -10,6 +10,10 @@ import ContactUs from './components/pages/ContactUs';
 import Section03 from './components/Section03';
 import Exchange from "./components/pages/EXCHANGE_COMP/EXCHANGE";
 import Rescue from "./components/pages/RESCUE_COMP/RESCUE";
+import LoginForm from './components/Login/Components/LoginForm';
+import Login2 from './components/Login/Components/Login2';
+import Forgot from './components/Login/Components/Forgot';
+import './index.css';
 
 function App() {
   return (
@@ -17,21 +21,27 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={
-            <><Navbar/>
+            <><Navbar />
               <Section01 />
               <Container />
               <Section03></Section03>
-              </>
-} />
-     <Route path="/About" element={<About/>}/>
-     <Route path="/Service" element={<Service/>}/>
-     <Route path="/ContactUs" element={<ContactUs/>}/>
-     <Route path="/exchange" element={<Exchange />}/>
-     <Route path="/new-born" element={<NEW_BORN/>}/>
-     <Route path="/rescue" element={<Rescue/>}/>
+            </>
+          } />
+          <Route path="/About" element={<About />} />
+          <Route path="/Service" element={<Service />} />
+          <Route path="/ContactUs" element={<ContactUs />} />
+          <Route path="/exchange" element={<Exchange />} />
+          <Route path="/new-born" element={<NEW_BORN />} />
+          <Route path="/rescue" element={<Rescue />} />
+          <Route path="/Login" element={<LoginForm />} />
+          <Route path="/Login2" element={<Login2 />} />
+          <Route path="/Forgot" element={<Forgot />} />
 
-      </Routes>
+        </Routes>
       </Router>
+
+
+
     </>
   )
 }
