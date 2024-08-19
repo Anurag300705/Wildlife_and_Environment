@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
+import Animal from './dropdown/animal'
 
 const Navbar = () => {
     return (
@@ -15,6 +16,9 @@ const Navbar = () => {
                 </li>
                 <li>
                     <Link to="/contactus">Contact Us</Link>
+                </li>
+                <li>
+                    <Animal/>
                 </li>
             </ul>
         </nav>
