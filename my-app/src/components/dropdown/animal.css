@@ -1,0 +1,58 @@
+/* Dropdown.css */
+
+/* Ensures that the dropdown menu appears directly below the toggle button */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0.5rem;
+    z-index: 1000;
+}
+
+/* Customize the dropdown toggle button */
+.dropdown-toggle {
+    border: none;
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.dropdown-toggle:hover {
+    background-color: #000000;
+}
+
+/* Customize dropdown items */
+.dropdown-item {
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #28a745;
+}
+
+/* animal.css */
+
+/* Use hover to show the dropdown, but don't override Bootstrap's show class */
+.animal-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Add margin-left to the toggle button's icon */
+.animal-dropdown .dropdown-toggle::after {
+    margin-left: 0.255em;
+}
+
+/* Highlight dropdown toggle button when dropdown is open */
+.animal-dropdown.show .dropdown-toggle {
+    background-color: #28a745;
+}
+
+/* Ensure dropdown menu shows when dropdown is active */
+.animal-dropdown.show .dropdown-menu {
+    display: block;
+}
