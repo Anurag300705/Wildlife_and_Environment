@@ -70,7 +70,7 @@ This project was built collaboratively by the following team members:
 |-------------------|----------------------------------------|
 | Arunangshu Dey    | contributor2.email@example.com         |
 | Jyotiska Biswas   | j.biswas0022@gmail.com                 |
-| Anurag Choudhury  | contributor3.email@example.com         |
+| Anurag Chaudhuri  | anuragchaudhuri3007@gmail.com          |
 | Shayan Mondal     | contributor4.email@example.com         |
 | Arkoprovo Biswas  | contributor5.email@example.com         |
 
