@@ -51,3 +51,49 @@ nav {
     margin: 0; /* Remove default body margin */
   }
   
+
+
+/* my-testing */
+
+  .navSec li:hover{
+    background-color: yellowgreen;
+    color: white;
+  }
+  h4{
+    margin-left: 10px;
+    color: white;
+    margin-top: 7.8px;
+    font-weight: lighter;
+  }
+
+
+  .dropdown{
+    display: none;
+  }
+
+  .drpdwn li:hover{
+    background-color: skyblue;
+    color: white;}
+
+
+  ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    background-color: grey;
+    color: white;
+    margin-top: 8px;
+
+  }
+
+  .dropdown ul{
+    margin: 0;
+    padding: 0;
+    
+  }
+
+
+  .dropdown ul ,li{
+    display: block;
+    
+  }
+

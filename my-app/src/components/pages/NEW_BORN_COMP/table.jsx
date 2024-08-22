@@ -3,14 +3,14 @@ import styles from "./table.module.css";
 
 const Table = () => {
     return(
-        <table>
+        <table className="TABLE">
         <thead>
             <tr className={styles.tab_hding}>
                 <th>SPECIES</th>
                 <th>BIRTH</th>
             </tr>
         </thead>
-        <tbody id={styles.species}>
+        <tbody className={styles.species}>
            
             <tr >
                 <td id="mam">Mammal</td>
