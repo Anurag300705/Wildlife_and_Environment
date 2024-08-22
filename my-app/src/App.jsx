@@ -19,9 +19,10 @@ function App() {
   return (
     <>
       <Router>
+      <Navbar />
         <Routes>
           <Route path="/" element={
-            <><Navbar />
+            <>
               <Section01 />
               <Container />
               <Section03></Section03>
