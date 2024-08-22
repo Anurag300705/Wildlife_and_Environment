@@ -44,9 +44,9 @@
   }
 }
 
-@media screen and (max-width: 900px) (min-width:320px) {
+/* @media screen and (max-width: 900px) (min-width:320px) {
   .section-text {
       font-size: 14px; /* Smaller font size for very small screens */
-      line-height: 1.4;
-  }
-}
+      /* line-height: 1.4; */
+  /* } */
+/* } */

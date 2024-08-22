@@ -1,15 +1,18 @@
+
 .sec_1{
-    margin-top: 70px;
+    margin-top: 100px;
   }
 
-  #visit{
+ 
+  ul .visit{
     letter-spacing: 1px;
     color: yellow;
     font-size: 20px;
     margin-left: 50px;
+    margin-bottom: 20px;
   }
   
-  #btn{
+  .btn{
     border: transparent;
     background-color: transparent;
     color:red;
@@ -20,7 +23,7 @@
     text-shadow: 1px 2px 3px yellowgreen;
   }
   
-  #btn:hover{
+  .btn:hover{
     color:blue ;
     cursor: pointer;
   

@@ -8,7 +8,7 @@ function Animal() {
                 Animal
             </Dropdown.Toggle>
 
-            <Dropdown.Menu>
+            <Dropdown.Menu id="list">
                 <Dropdown.Item href="/exchange">Arrival</Dropdown.Item>
                 <Dropdown.Item href="/new-born">Newborn</Dropdown.Item>
                 <Dropdown.Item href="/rescue">Rescue</Dropdown.Item>

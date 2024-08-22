@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css'
 import Navbar from './components/Navbar'
 import Section01 from './components/Section01'
-import NEW_BORN from './components/pages/NEW_BORN_COMP/NEW_BORN'
+import NEW_BORN from "./components/pages/NEW_BORN_COMP/NEW_BORN";
 import Container from './components/events/container'
 import About from './components/pages/About';
 import Service from './components/pages/Service';
@@ -31,7 +31,7 @@ function App() {
           <Route path="/Service" element={<Service />} />
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/exchange" element={<Exchange />} />
-          <Route path="/new-born" element={<NEW_BORN />} />
+          <Route path="/NEW_BORN" element={<NEW_BORN />} />
           <Route path="/rescue" element={<Rescue />} />
           <Route path="/Login" element={<LoginForm />} />
           <Route path="/Login2" element={<Login2 />} />
@@ -46,7 +46,7 @@ function App() {
   )
 }
 
-export default App
+export default App;
 
 
 
@@ -76,4 +76,4 @@ export default App
 //   );
 // }
 
-// export default App;
+//  export default App;
