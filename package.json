@@ -1,0 +1,11 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "This project is a **Wildlife Sanctuary Website** designed to provide detailed statistical data on various animals. Additionally, the website allows users to purchase tickets for events organized by the sanctuary and buy tickets for visits to the sanctuary.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
