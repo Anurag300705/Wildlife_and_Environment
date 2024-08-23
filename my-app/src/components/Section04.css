@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: clamp(1rem, 2vw, 2.5rem);
+}
+
+html {
+    font-size: 1vw;
+}
+
+.main {
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    height: 66vh;
+    background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/tiger-in-the-grass-elizabeth-waitinas.jpg');
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* left section */
+.left {
+    width: 50%;
+    height: 40vh;
+    padding: 20px;
+    color: azure;
+    text-shadow: 2px 2px 4px #000000;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.left h1 {
+    margin: 0 0 20px 0;
+    font-size: 2rem;
+
+}
+
+/* 1.picture-box */
+.pic-container {
+    background-color: white;
+    border-radius: 7%;
+    height: 40vh;
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 1.2s ease-in-out, height 1.2s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.pic-wrapper {
+    height: 100%;
+    width: 100%;
+    border-radius: 5%;
+    overflow: hidden;
+    border: 5px solid white;
+}
+
+.pic {
+    background-color: yellow;
+    height: 100%;
+    width: 100%;
+    background-image: url('https://images5.alphacoders.com/548/548656.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 5%;
+}
+
+.pic-container:hover {
+    height: 50vh;
+    width: 40vw;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* right section */
+.right {
+    width: 50%;
+    height: 40vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFE0;
+    text-shadow: 2px 2px 4px #000000;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.para {
+    margin: 0 0 20px 0;
+    font-size: 1.5vw;
+}
+
+/* 2.join-btn */
+.join-btn {
+    position: static;
+    padding: 1vh 3vh;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #f5f5f3, #fdffa1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.join-btn:hover {
+    background: linear-gradient(90deg, #f2f3f4, #9b9999);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.join-btn:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}

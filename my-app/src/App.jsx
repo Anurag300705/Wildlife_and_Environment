@@ -14,18 +14,20 @@ import LoginForm from './components/Login/Components/LoginForm';
 import Login2 from './components/Login/Components/Login2';
 import Forgot from './components/Login/Components/Forgot';
 import './index.css';
+import Section04 from './components/Section04';
 
 function App() {
   return (
     <>
       <Router>
-      <Navbar />
+        <Navbar />
         <Routes>
           <Route path="/" element={
             <>
               <Section01 />
               <Container />
-              <Section03></Section03>
+              <Section03 />
+              <Section04 />
             </>
           } />
           <Route path="/About" element={<About />} />
