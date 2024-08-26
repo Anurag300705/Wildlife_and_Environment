@@ -22,7 +22,10 @@ mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
 app.get('/', (req, res) => {
     res.send('Hello')
 })
+
 app.use('/login2', require('./routes/user')
+)
+app.use('/new_born', require('./routes/newBorn')
 )
 
 

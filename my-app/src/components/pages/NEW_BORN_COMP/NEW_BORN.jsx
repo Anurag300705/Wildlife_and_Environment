@@ -2,7 +2,7 @@
 import Data_link from "./data_link";
 import Table from "./table";
 import './Newborn.css';
-
+import Form from "./form";
 
 function NEW_BORN() {
   return (
@@ -12,8 +12,7 @@ function NEW_BORN() {
       <Data_link></Data_link>
 
       <Table></Table>
-
-      <div id="total">Total species = 203</div>
+      <Form></Form>
     </div>
   );
 }
