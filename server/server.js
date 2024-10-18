@@ -27,6 +27,7 @@ app.use('/login2', require('./routes/user')
 )
 app.use('/new_born', require('./routes/newBorn')
 )
+app.use('/login', require('./routes/login'))
 
 
 

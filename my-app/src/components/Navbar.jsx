@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
+    // console.log($('./profile'))
     return (
         <nav>
             <Link to="/" className="title"><h1>Website</h1></Link>
@@ -28,7 +29,7 @@ const Navbar = () => {
                 <li>
                     <h4>Animal</h4>
                     <div className='dropdown'>
-                        <ul className='drpdwn'> 
+                        <ul className='drpdwn'>
                             <li>
                                 <Link to="/exchange">Exchange</Link>
                             </li>
@@ -39,11 +40,12 @@ const Navbar = () => {
                                 <Link to="/Rescue">Rescue Animals</Link>
                             </li>
                             <li>
-                               <Link to="/Special_Animals"> Special Animals</Link>
+                                <Link to="/Special_Animals"> Special Animals</Link>
                             </li>
                         </ul>
                     </div>
                 </li>
+                <li><div className="profile">hello</div></li>
             </ul>
         </nav>
     );
