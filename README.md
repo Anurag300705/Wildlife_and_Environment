@@ -68,10 +68,10 @@ This project was built collaboratively by the following team members:
 
 | Name              | Contact Information                    |
 |-------------------|----------------------------------------|
-| Arunangshu Dey    | contributor2.email@example.com         |
+| Arunangshu Dey    | arunanshudey7@gmail.com                |
 | Jyotiska Biswas   | j.biswas0022@gmail.com                 |
 | Anurag Chaudhuri  | anuragchaudhuri3007@gmail.com          |
-| Shayan Mondal     | contributor4.email@example.com         |
+| Shayan Mondal     | mondalshayan60.@gmail.com              |
 | Arkoprovo Biswas  | contributor5.email@example.com         |
 
 ## Contact
