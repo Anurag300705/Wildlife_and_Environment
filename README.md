@@ -72,7 +72,7 @@ This project was built collaboratively by the following team members:
 | Jyotiska Biswas   | j.biswas0022@gmail.com                 |
 | Anurag Chaudhuri  | anuragchaudhuri3007@gmail.com          |
 | Shayan Mondal     | mondalshayan60.@gmail.com              |
-| Arkoprovo Biswas  | contributor5.email@example.com         |
+| Arkoprovo Biswas  | arkapravabiswas7@gmail.com       |
 
 ## Contact
 
