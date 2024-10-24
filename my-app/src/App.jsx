@@ -15,6 +15,7 @@ import Login2 from './components/Login/Components/Login2';
 import Forgot from './components/Login/Components/Forgot';
 import './index.css';
 import Section04 from './components/Section04';
+import  Event  from './components/pages/event/event';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               <Container />
               <Section03 />
               <Section04 />
+              <Event />
             </>
           } />
           <Route path="/About" element={<About />} />
@@ -39,6 +41,7 @@ function App() {
           <Route path="/Login" element={<LoginForm />} />
           <Route path="/Login2" element={<Login2 />} />
           <Route path="/Forgot" element={<Forgot />} />
+          <Route path="/Event" element={<Event />} />
 
         </Routes>
       </Router>
