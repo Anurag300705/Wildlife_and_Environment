@@ -16,6 +16,8 @@ import Forgot from './components/Login/Components/Forgot';
 import './index.css';
 import Section04 from './components/Section04';
 import  Event  from './components/pages/event/event';
+import Book from './components/pages/event/components/Book';
+
 
 function App() {
   return (
@@ -29,7 +31,8 @@ function App() {
               <Container />
               <Section03 />
               <Section04 />
-              <Event />
+              
+              
             </>
           } />
           <Route path="/About" element={<About />} />
@@ -42,6 +45,8 @@ function App() {
           <Route path="/Login2" element={<Login2 />} />
           <Route path="/Forgot" element={<Forgot />} />
           <Route path="/Event" element={<Event />} />
+          <Route path="/book" element={<Book />} />
+
 
         </Routes>
       </Router>
