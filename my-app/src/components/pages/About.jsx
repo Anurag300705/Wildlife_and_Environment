@@ -1,10 +1,58 @@
 import React, { useState } from 'react';
 
 
+
+
 const About = () => {
   return (
-    <div>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia eveniet nisi, ducimus magnam culpa maxime quam fuga nulla in. Adipisci non cupiditate quam atque eius error culpa alias voluptas fugit. Blanditiis odio distinctio quidem minima modi quis, explicabo eligendi at suscipit sint iste optio esse sit porro ipsa excepturi quam illum. Perspiciatis quis rerum, quaerat architecto nulla ab minima consequuntur blanditiis molestias veritatis veniam minus ducimus dolor voluptatibus ea laboriosam quisquam voluptatem delectus ut aliquam non sunt facere esse! Id quibusdam animi maxime culpa non blanditiis facilis facere eum reprehenderit quidem laborum recusandae necessitatibus sit deleniti cumque numquam, voluptas voluptatibus corrupti unde itaque nam velit aliquam. Nemo, fuga! Repellendus dolorum quas quaerat quo qui explicabo esse, a distinctio! Dolor reprehenderit asperiores fuga omnis odio doloribus quod similique, autem odit ducimus alias labore eligendi blanditiis delectus praesentium provident aliquid, exercitationem dolore fugit tempore at vero distinctio esse qui? Beatae voluptatum dicta excepturi cum recusandae adipisci repudiandae est, animi quae. Vel sed omnis eligendi nisi sequi fugit libero eaque? Repellat sed minus aliquid architecto ex accusantium corrupti iusto totam delectus consequatur incidunt repudiandae odio provident inventore illum tempora deserunt iste, vitae hic tempore. Autem, ipsa possimus quisquam voluptatum nam fugiat voluptates temporibus nulla veniam maxime expedita aliquid natus. Quaerat beatae voluptatem velit repellendus, perferendis quas vel itaque soluta corporis nesciunt provident eum odit totam? Consequatur, harum qui quos possimus minus ea corrupti illum aliquam quasi cupiditate a quas animi quibusdam nobis perferendis ratione, incidunt deleniti suscipit saepe in esse inventore culpa velit enim. Reiciendis, doloribus. Minima debitis earum temporibus ducimus adipisci alias, nihil tenetur amet, consectetur quasi excepturi nobis ipsum perspiciatis est illum inventore quae eligendi, officiis aliquid? Eum eaque, corrupti laudantium pariatur minus quae inventore dicta fugiat est similique maiores eos earum doloribus sunt molestias, rerum ratione alias voluptatem enim? Nemo amet doloribus, quam tenetur aspernatur commodi nobis odit sequi culpa, incidunt soluta obcaecati harum exercitationem quasi, enim nisi perspiciatis deserunt dicta? Ut quasi illo alias nesciunt suscipit placeat impedit laboriosam id illum, nam blanditiis iusto consectetur aut voluptas et, dolorem laborum accusamus. Nam in illum ipsam odit quas commodi distinctio. Rerum nisi porro recusandae pariatur explicabo inventore harum, quibusdam consequuntur laboriosam officia quod veniam voluptates id ipsum! Dolores voluptate officia consectetur sapiente quam ratione fugit cupiditate placeat, minus veritatis eum nisi quibusdam repellendus cumque porro voluptatem, facere eaque beatae? At excepturi sapiente aut nihil soluta fugiat ipsam labore! Quaerat exercitationem impedit distinctio illo, ut inventore sunt cupiditate eveniet deserunt voluptatibus nemo, doloremque itaque esse facilis, soluta tenetur. Officiis possimus molestias porro consequat
+    <div className='' >
+    
+    <div  className=' w-full'>
+        <img className='w-full h-[500px] object-fill' src="https://wallpapercave.com/wp/wp9173690.jpg" alt="animal" />
+    </div>
+    <div className=''><p className='absolute inset-0 flex justify-center items-center pr-[700px] pb-[200px] font-semibold  text-[60px] text-yellow-300 '>This is my about section</p></div>
+    
+
+    <div className='mt-[30px] grid grid-cols-2 pb-[50px]'>
+        <div className='w-[600px] pl-[70px] mt-[30px]'>
+            <img className='border-[5px] border-yellow-600 rounded-[10px]' src="https://wallpaperaccess.com/full/3180281.jpg" alt="image" />
+        </div>
+
+        <div className='w-[600px] text-center '>
+            <p className='text-[40px] text-blue-500 font-semibold'>About Section</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dolorum suscipit molestiae accusamus, facere ipsam cumque labore, dolore distinctio magnam unde saepe sed dolores consequuntur odit omnis ratione nesciunt aperiam.
+            Deserunt, maiores, quo dolore magnam sed commodi earum cum ex temporibus amet aliquid eveniet! Rerum possimus amet id cum harum ut libero a, quae dolores facere illo repellendus magnam earum!
+            Commodi, quos. Fugiat asperiores blanditiis cum magni, animi quibusdam a praesentium molestias saepe quam exercitationem velit odio, dolorum cumque, ab consequuntur porro quas. Eius optio nihil non a, vitae assumenda.
+            Labore reiciendis accusamus repudiandae voluptatum eos delectus ea aperiam, placeat ullam iste hic id alias sunt velit sequi quia voluptas ipsa iusto, neque rerum veniam eveniet minus. Dolores, ex magni!</p>
+        </div>
+    </div>
+
+
+    <div className='mt-[20px] grid grid-cols-2 bg-green-400 '>
+        
+            <div className='pl-[20px] mt-[30px]' >
+                <p className='text-[50px] font-serif  uppercase underline text-center text-slate-600'>Uniqueness</p>
+                <p className='pl-[100px]'>1. Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur adipisicing. <br />
+                2. Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum. <br />
+                3. Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur. <br /> 
+                4. Lorem ipsum dolor sit amet consectetur adipisicing elit dolor sit. <br />
+                5. Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur. <br />
+                6. Lorem ipsum dolor sit amet consectetur adipisicing elit amet consectetur. <br />
+                7. Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur. <br />
+                8. Lorem ipsum dolor sit amet consectetur adipisicing elit ipsum dolor. <br />
+                9. Lorem ipsum dolor sit amet consectetur adipisicing elit amet consectetur.  <br />
+                10. Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum.
+                </p>
+            </div>
+
+            <div>
+                <img src="https://wallpaperaccess.com/full/775987.jpg" alt="bird" />
+            </div>
+       
+
+    </div>
+    
+    
     </div>
   )
 }

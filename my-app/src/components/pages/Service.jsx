@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-export default function Service() {
+const Service = () => {
   return (
-    <div>Service</div>
+    <div>hello</div>
   )
 }
+
+export default Service;
+

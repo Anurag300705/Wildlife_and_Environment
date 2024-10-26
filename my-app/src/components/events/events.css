@@ -96,7 +96,7 @@ body {
   }
 
   .event-card {
-      width: 250px
+      width: 250px;
       height: auto;
       margin: 2vw 5vw;
       background-color: rgb(24, 24, 24);

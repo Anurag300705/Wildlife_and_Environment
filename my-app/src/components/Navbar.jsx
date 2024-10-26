@@ -11,7 +11,7 @@ import './Navbar.css';
 const Navbar = () => {
     // console.log($('./profile'))
     return (
-        <nav>
+        <nav className='sticky top-0 z-50 '>
             <Link to="/" className="title"><h1>Website</h1></Link>
             <ul className='navSec'>
                 <li>
@@ -21,13 +21,13 @@ const Navbar = () => {
                     <Link to="/About">About</Link>
                 </li>
                 <li>
-                    <Link to="/service">Service</Link>
+                    <Link to="/event">Event</Link>
                 </li>
                 <li>
-                    <Link to="/contactus">Contact Us</Link>
+                    <Link to="/ContactUs">Contact Us</Link>
                 </li>
                 <li>
-                    <h4>Animal</h4>
+                    <h5 className='absolute mt-[2.2px] ml-[5px] text-white'>Animal</h5>
                     <div className='dropdown'>
                         <ul className='drpdwn'>
                             <li>
@@ -45,7 +45,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                 </li>
-                <li><div className="profile">hello</div></li>
+                
             </ul>
         </nav>
     );
