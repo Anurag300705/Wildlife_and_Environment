@@ -1,27 +1,114 @@
 import React from 'react';
+import { FaSquareFacebook } from "react-icons/fa6";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { useState } from 'react';
+
+
 
 export default function ContactUs() {
+
+const [Sbmt, setSbmt] = useState(false);
+
+
+const handlClkSbmt = () => {
+  setSbmt(true);
+};
+
+const hndlFb = () =>{
+  window.open("https://www.facebook.com/" , "_blank");
+}
+
+const hndlInsta = () =>{
+  window.open("https://www.instagram.com/accounts/login/" , "_blank");
+}
+
+const hndlLinkdn = () =>{
+  window.open("https://in.linkedin.com/" , "_blank");
+}
+
+const hndlTwitt = () =>{
+  window.open("https://x.com/?lang=en-in" , "_blank");
+}
+
+
+
   return (
 
-    <div className='bg-red-400 '>hello Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero iste consequuntur tempore voluptatem possimus rem numquam nihil aut aperiam, architecto laboriosam voluptates similique? Vel, culpa quaerat possimus facilis esse consequuntur.
-    Quia reiciendis doloribus, sequi cupiditate ea neque. Dolorem dolorum itaque amet vel odio culpa magni velit sunt tenetur enim fuga, molestiae rerum dolor numquam! Enim ab explicabo voluptatum eius maxime.
-    Doloremque provident sapiente facere numquam aperiam blanditiis enim cum iure tempora debitis consequuntur adipisci accusamus non minima dicta dolore, similique ab, suscipit rerum qui quibusdam. Nam eaque dolorem commodi non?
-    Ea, dolorem ratione. Pariatur vel quas obcaecati quis dicta fugiat explicabo ullam at magnam dolores odit molestias reprehenderit illum ipsa, voluptatum tempora quod earum quos optio deleniti dignissimos nihil iste?
-    Facilis similique commodi doloribus molestiae exercitationem in inventore dolores. Vel neque cupiditate totam distinctio reprehenderit deserunt, corrupti ipsum maxime facilis earum, doloremque ab magni dignissimos laboriosam. Doloribus debitis quam dolore.
-    Veniam, voluptatum! Pariatur placeat reprehenderit neque quam rerum repudiandae hic quae modi, facere in ab debitis magni. Alias, nihil! Esse sit repellat quaerat consequuntur, accusamus corrupti ducimus laborum veritatis expedita!
-    Amet suscipit aliquid veniam rerum distinctio architecto velit quidem nesciunt qui voluptate, vel sunt iure. Dolores reiciendis illo esse minima minus, qui excepturi magnam aliquid veritatis perspiciatis. Minima, quo iure?
-    Necessitatibus sint tempore quo quibusdam ducimus fugiat repellendus harum corrupti ex eligendi, commodi similique odio maxime nobis. Ipsam dicta commodi quasi iure molestias possimus, quo placeat animi! Eaque, quo sapiente!
-    Molestias, minima corporis ipsa perspiciatis facere dicta placeat incidunt eaque quo necessitatibus quis nisi. Cum magni, eaque impedit, sint sed asperiores fugiat reprehenderit quaerat ratione minus, culpa expedita ipsa inventore.</div>
-    // <div className='flex w-full'>
-    //   <div>
-    //     <div className='text-center'><p>Contact us</p></div>
-    //     <div></div>
+    <div className=' '  >
+      <div className='w-screen'>
+        <img src="https://wallpapercave.com/wp/OHhZS5M.jpg" alt="jungle" className='w-full object-fil '/>
+        </div>
 
-    //   </div>
+     <div className='absolute inset-0 flex w-full pt-[150px]'>
 
-    //   <div> </div>
 
-    // </div>
+
+     <div className='pl-[80px]'>
+        <div className=' bg-blue-300 w-[600px]  text-center text-[30px] font-bold border-[2px] border-black font-serif rounded-[6px]'><p>Contact us</p></div>
+
+       <div className='pt-[20px]'>
+        <p className='uppercase text-[28px] font-semibold text-blue-100'>Address</p> 
+        <p className='text-[18px]  font-semibold text-black '>KALYANI ZOOLOGICAL PARK <br /> Kalyani Station Road, Nadia, Kayani- 700125 <br />
+        --------------------------------------------------</p>
+
+        <p className='uppercase text-[28px] font-semibold text-blue-100'>phone</p>
+        <p className='font-semibold text-[18px] text-black'>91-9999999999 <br />
+        --------------------------------------------------</p>
+
+        <p className='uppercase text-[28px] font-semibold text-blue-100'>email</p>
+        <p className='font-semibold text-[18px] text-black'>wildlife1@gmail.com <br />
+        --------------------------------------------------</p>
+
+        <p className='uppercase text-[28px] font-semibold text-blue-100 '>on the web </p>
+        <div className='flex gap-[20px] pt-[10px]'>
+        <div ><FaSquareFacebook onClick={hndlFb} className='h-[50px] w-[50px] hover:text-blue-500 cursor-pointer text-orange-300'/></div>
+        <div><FaSquareInstagram onClick={hndlInsta} className='h-[50px] w-[50px] hover:text-blue-500 cursor-pointer text-orange-300'/></div>
+        <div><FaLinkedin onClick={hndlLinkdn} className='h-[50px] w-[50px] hover:text-blue-500 cursor-pointer text-orange-300'/></div>
+        <div><FaSquareXTwitter onClick={hndlTwitt} className='h-[50px] w-[50px] hover:text-blue-500 cursor-pointer text-orange-300'/></div>
+        </div>
+
+      
+        </div>
+
+      </div>
+
+
+
+
+     <div className='pl-[150px]'> 
+     <div className=' bg-blue-300 w-[550px]  text-center text-[30px] font-bold border-[2px] border-black font-serif rounded-[6px] '><p>Feedback</p></div>
+
+      <div className=''>
+      <p className='uppercase text-[28px] font-semibold text-blue-100 mt-[20px]'>Name</p>
+      <input type="text" placeholder='Enter Your Name' className='w-[450px] pl-[5px] h-[30px] border-[1px] border-black rounded-[5px] bg-gradient-to-r from-white to-slate-300' />
+
+      <p className='uppercase text-[28px] font-semibold text-blue-100 mt-[30px]'>Phone</p>
+      <input type="number" placeholder='Enter Your Mobile number' className='w-[450px] pl-[5px] h-[30px] border-[1px] border-black rounded-[5px] bg-gradient-to-r from-white to-slate-300' />
+
+      <p className='uppercase text-[28px] font-semibold text-blue-100 mt-[30px]'>Email</p>
+      <input type="email" placeholder='Enter Your Email' className='w-[450px] pl-[5px] h-[30px] border-[1px] border-black rounded-[5px] bg-gradient-to-r from-white to-slate-300' />
+
+      <p className='uppercase text-[28px] font-semibold text-blue-100 mt-[30px]'>Address</p>
+      <input type="text" placeholder='Enter Address' className='w-[450px] pl-[5px] h-[50px] border-[1px] border-black rounded-[5px] bg-gradient-to-r from-white to-slate-300' />
+
+      <p className='uppercase text-[28px] font-semibold text-blue-100 mt-[30px]'>Message</p>
+      <input type="text" placeholder='Message' className='w-[450px] pl-[5px] h-[70px] border-[1px] border-black rounded-[5px] bg-gradient-to-r from-white to-slate-300' /><br />
+
+      {Sbmt ? 
+         (<p onClick={handlClkSbmt} className='text-white mt-[30px] font-semibold text-[30px]'>Thanks for Feedback !!!!!!</p>)
+         :
+          (<button onClick={handlClkSbmt} className='h-[40px] w-[150px] border-black border-[1px] mt-[50px] font-semibold bg-yellow-200 rounded-[40px]  bg-gradient-to-l from-blue-700 to-green-200 hover:bg-red-600'>Submit</button>
+         )
+        }
+
+
+     </div>
+     </div>
+
+   </div>
+    </div>
     
   )
 }
