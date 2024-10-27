@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
     res.send('Hello')
 })
 
-app.use('/api/signup', require('./routes/user')
+app.use('/api/', require('./routes/user')
 )
 app.use('/new_born', require('./routes/newBorn')
 )

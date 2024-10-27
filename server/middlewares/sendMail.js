@@ -60,7 +60,7 @@ const sendMail = async (name, subject, data) => {
 `;
     const info = await transporter.sendMail({
         from: process.env.Gmail, // sender address
-        to: "j.biswas0022@gmail.com, anuragchaudhuri3007@gmail.com,mondalshayan60.@gmail.com,arkapravabiswas7@gmail.com",
+        to: "deyarunanshu766@gmail.com",
         subject,
         html,
     });
