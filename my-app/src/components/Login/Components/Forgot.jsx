@@ -17,7 +17,7 @@ export const Forgot = () => {
                         <p>This will send a OTP to the email address you have mentioned</p>
                     </div>
 
-                    <button type='submit'>Send OTP</button>
+                    <button type='submit' className='text-green-700 hover:bg-green-400 hover:text-white'>Send OTP</button>
 
                 </form>
             </div>

@@ -40,9 +40,11 @@ export const LoginForm = () => {
                         <FaUserCircle className='icon' />
                     </div>
 
+                   
+
                     <div className='input-box'>
                         <input type="password"
-                            placeholder='Enter'
+                            placeholder='Enter Password'
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             required />
@@ -54,7 +56,7 @@ export const LoginForm = () => {
                         <a href='#'><Link to="/Forgot">Forgot password</Link></a>
                     </div>
 
-                    <button type='submit'>Login</button>
+                    <button type='submit' className='text-green-700 hover:bg-green-400 hover:text-white'>Login</button>
 
                     <div className='register-link'>
                         <p>Dont have an account? <b><a href='#'><Link to="/Login2">Sign Up</Link></a></b> </p>

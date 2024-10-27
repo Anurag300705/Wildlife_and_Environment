@@ -40,8 +40,17 @@ export const Login2 = () => {
                     </div>
 
                     <div className='input-box'>
+                        <input type="text"
+                            placeholder='Enter Email'
+                            value={username}
+                            onChange={(e) => setUsername(e.target.value)}
+                            required />
+                        <FaUserCircle className='icon' />
+                    </div>
+
+                    <div className='input-box'>
                         <input type="password"
-                            placeholder='Create Username'
+                            placeholder='Create Password'
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             required />
@@ -52,7 +61,7 @@ export const Login2 = () => {
                         <label><input type='checkbox' />Remember me</label>
                     </div>
 
-                    <button type='submit'>Create Account</button>
+                    <button type='submit' className='text-green-700 hover:bg-green-400 hover:text-white'>Create Account</button>
 
                 </form>
             </div>
