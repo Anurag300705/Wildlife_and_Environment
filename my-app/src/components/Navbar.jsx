@@ -40,7 +40,7 @@ const Navbar = () => {
                                 <Link to="/Rescue">Rescue Animals</Link>
                             </li>
                             <li>
-                                <Link to="/Special_Animals"> Special Animals</Link>
+                                <Link to="/SpecialAnimals"> Special Animals</Link>
                             </li>
                         </ul>
                     </div>
