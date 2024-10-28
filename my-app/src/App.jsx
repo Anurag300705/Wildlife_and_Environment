@@ -17,6 +17,7 @@ import './index.css';
 import Section04 from './components/Section04';
 import  Event  from './components/pages/event/event';
 import Book from './components/pages/event/components/Book';
+import SpclAnmls from "./components/pages/SPECIAL_ANIMALS/Special.jsx";
 
 
 function App() {
@@ -46,7 +47,7 @@ function App() {
           <Route path="/Forgot" element={<Forgot />} />
           <Route path="/Event" element={<Event />} />
           <Route path="/book" element={<Book />} />
-
+          <Route path="/SpecialAnimals" element={<SpclAnmls />} />
 
         </Routes>
       </Router>

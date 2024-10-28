@@ -16,6 +16,8 @@ const handlClkSbmt = () => {
   setSbmt(true);
 };
 
+
+
 const hndlFb = () =>{
   window.open("https://www.facebook.com/" , "_blank");
 }
@@ -78,9 +80,15 @@ const hndlTwitt = () =>{
 
 
      <div className='pl-[150px]'> 
-     <div className=' bg-blue-300 w-[550px]  text-center text-[30px] font-bold border-[2px] border-black font-serif rounded-[6px] '><p>Feedback</p></div>
+     <div className=' bg-blue-300 w-[550px]  text-center text-[30px] font-bold border-[2px] border-black font-serif rounded-[6px] '><p>Feedback</p>
+     </div>
 
-      <div className=''>
+
+     {Sbmt ? 
+         (<p onClick={handlClkSbmt} className='text-white font-semibold text-[60px] mt-[200px]'>Thanks for Feedback..</p>)
+         :
+          (
+            <div className=''>
       <p className='uppercase text-[28px] font-semibold text-blue-100 mt-[20px]'>Name</p>
       <input type="text" placeholder='Enter Your Name' className='w-[450px] pl-[5px] h-[30px] border-[1px] border-black rounded-[5px] bg-gradient-to-r from-white to-slate-300' />
 
@@ -96,15 +104,17 @@ const hndlTwitt = () =>{
       <p className='uppercase text-[28px] font-semibold text-blue-100 mt-[30px]'>Message</p>
       <input type="text" placeholder='Message' className='w-[450px] pl-[5px] h-[70px] border-[1px] border-black rounded-[5px] bg-gradient-to-r from-white to-slate-300' /><br />
 
-      {Sbmt ? 
-         (<p onClick={handlClkSbmt} className='text-white mt-[30px] font-semibold text-[30px]'>Thanks for Feedback !!!!!!</p>)
-         :
-          (<button onClick={handlClkSbmt} className='h-[40px] w-[150px] border-black border-[1px] mt-[50px] font-semibold bg-yellow-200 rounded-[40px]  bg-gradient-to-l from-blue-700 to-green-200 hover:bg-red-600'>Submit</button>
-         )
-        }
+     
+          
+       <button onClick={handlClkSbmt} className='h-[40px] w-[150px] border-black border-[1px] mt-[50px] font-semibold bg-yellow-200 rounded-[40px]  bg-gradient-to-l from-blue-700 to-green-200 hover:bg-red-600'>Submit</button>
+         
 
 
      </div>
+      )
+        } 
+
+      
      </div>
 
    </div>
