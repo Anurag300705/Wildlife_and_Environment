@@ -11,7 +11,7 @@ html {
 
 .main {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-direction: row; /* Default to row for larger screens */
     width: 100%;
     height: 66vh;
     background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/tiger-in-the-grass-elizabeth-waitinas.jpg');
@@ -21,9 +21,8 @@ html {
     justify-content: center;
 }
 
-/* left section */
 .left {
-    width: 50%;
+    width: 50%; 
     height: 40vh;
     padding: 20px;
     color: azure;
@@ -39,15 +38,13 @@ html {
 .left h1 {
     margin: 0 0 20px 0;
     font-size: 2rem;
-
 }
 
-/* 1.picture-box */
 .pic-container {
     background-color: white;
     border-radius: 7%;
-    height: 40vh;
-    width: 25vw;
+    height: 100000000000px;
+    width: 30vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +57,7 @@ html {
     width: 100%;
     border-radius: 5%;
     overflow: hidden;
-    border: 5px solid white;
+    border: 3px solid white;
 }
 
 .pic {
@@ -73,15 +70,14 @@ html {
     border-radius: 5%;
 }
 
-.pic-container:hover {
-    height: 50vh;
+/* .pic-container:hover {
+    height: ;
     width: 40vw;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
+} */
 
-/* right section */
 .right {
-    width: 50%;
+    width: 50%; /* Same for right section */
     height: 40vh;
     padding: 20px;
     display: flex;
@@ -99,7 +95,6 @@ html {
     font-size: 1.5vw;
 }
 
-/* 2.join-btn */
 .join-btn {
     position: static;
     padding: 1vh 3vh;
@@ -121,4 +116,43 @@ html {
 .join-btn:active {
     transform: scale(0.98);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) { /* Adjust for mobile devices */
+    .main {
+        flex-direction: column; /* Stack elements vertically */
+        height: auto; /* Allow height to be dynamic */
+    }
+
+    .left, .right {
+        width: 100%; /* Full width for both sections */
+        height: auto; /* Allow height to be dynamic */
+    }
+
+    .right{
+        padding-top: 0;
+    }
+
+    .left h1 {
+        font-size: 4rem;
+    }
+
+    .para {
+        margin-top: 3px;
+        font-size: 1vw;
+    }
+
+    .pic-container {
+        width: 80vw; /* Make the picture container responsive */
+        height: 50vw; /* Allow height to adjust */
+    }
+
+    .para {
+        font-size: 4vw; /* Increase font size for better readability on small screens */
+    }
+
+    .join-btn {
+        font-size: 4vw; /* Increase button font size for better usability */
+    }
 }

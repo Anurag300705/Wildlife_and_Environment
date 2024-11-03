@@ -1,0 +1,58 @@
+/* Footer.css */
+
+.footer {
+    background-color: #333; /* Dark background */
+    color: #fff;            /* White text color */
+    padding: 20px 0;       /* Padding for top and bottom */
+    text-align: center;     /* Center text */
+  }
+  
+  .footer-content {
+    max-width: 1200px;     /* Max width for the content */
+    margin: 0 auto;        /* Center the content */
+    padding: 0 20px;       /* Padding for left and right */
+  }
+  
+  .footer-title {
+    font-size: 24px;       /* Title font size */
+    margin: 0;             /* Remove default margin */
+  }
+  
+  .footer-description {
+    font-size: 16px;       /* Description font size */
+    margin: 10px 0;        /* Margin for spacing */
+  }
+  
+  .footer-links {
+    list-style: none;      /* Remove list style */
+    padding: 0;            /* Remove padding */
+    margin: 10px 0;        /* Margin for spacing */
+    display: flex;         /* Use flex for horizontal layout */
+    justify-content: center;/* Center the links */
+  }
+  
+  .footer-links li {
+    margin: 0 15px;        /* Space between links */
+  }
+  
+  .footer-links a {
+    color: #fff;           /* Link color */
+    text-decoration: none;  /* Remove underline */
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;      /* Space above bottom text */
+    font-size: 14px;       /* Bottom text font size */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .footer-links {
+      flex-direction: column; /* Stack links vertically on small screens */
+    }
+  
+    .footer-links li {
+      margin: 5px 0;          /* Adjust margin for stacked layout */
+    }
+  }
+  

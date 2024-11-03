@@ -1,52 +1,97 @@
 .section-container {
   display: flex;
-  align-items: center;
   padding: 20px;
   max-height: 400px;
-  /* flex-wrap: wrap;  */
+  flex-wrap: wrap;
+  column-gap: 10rem; /* 10rem gap between the image and text */
 }
 
 .section-image {
-  width: 40%;
-  height: auto;
-  aspect-ratio: 3/2;
+  padding-left: 7rem; /* 7rem space on the left of the image */
+  width: 30rem;
   object-fit: contain;
-  mix-blend-mode: color-burn;
+  aspect-ratio: 3/2;
+  max-width: 100%;
 }
 
 .section-text {
+  padding: 0;
+  align-self: center;
+  margin: 0;
   width: 50%;
-  padding: 0%;
-  padding-left: 80px;
-  font-size: 16px;
+  padding-left: 7rem; /* 7rem space on the right of the text */
+  font-size: 1.2rem;
   line-height: 1.6;
 }
 
-/* Responsive design for smaller screens */
-@media screen and (max-width: 768px) {
+/* Large tablets and smaller desktops (1024px and below) */
+@media (max-width: 1024px) and (min-width: 819px) {
   .section-container {
-      flex-direction: column; /* Stack items vertically */
-      align-items: flex-start; /* Align items to the start of the container */
-      max-height: 400px;
+    flex-direction: column;
+    padding: 15px;
+    align-items: center;
   }
 
   .section-image {
-      width: 70%;
-      align-self: center;
-      
+    padding-left: 0; /* Center the image */
+    margin: 0 auto;
+    width: 50%;
   }
 
   .section-text {
-      width: 100%; /* Text takes full width */
-      padding-left: 10px; /* Remove extra padding */
-      padding-right: 10px;
-
+    padding-top: 1.5rem; 
+    width: 80%;
+    padding-left: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.8;
   }
 }
 
-/* @media screen and (max-width: 900px) (min-width:320px) {
+/* Small tablets and large phones (818px and below) */
+@media (max-width: 818px) and (min-width: 481px) {
+  .section-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .section-image {
+    padding-left: 0;
+    width: 60%;
+    margin: 0 auto;
+  }
+
   .section-text {
-      font-size: 14px; /* Smaller font size for very small screens */
-      /* line-height: 1.4; */
-  /* } */
-/* } */
+    padding: 0;
+    padding-top: 2rem;
+    width: 80%;
+    text-align: center;
+    font-size: 1.6rem; /* Even larger font size for smaller screens */
+    line-height: 1.8;
+  }
+}
+
+/* Mobile screens (480px and below) */
+@media (max-width: 480px) {
+  .section-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .section-image {
+    padding-left: 0;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .section-text {
+    padding: 0;
+    padding-top: 2rem;
+    width: 90%;
+    text-align: center;
+    font-size: 3rem; /* Larger font size for mobile */
+    /* line-height: 1.6; */
+  }
+}
