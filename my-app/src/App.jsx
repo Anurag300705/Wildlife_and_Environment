@@ -18,6 +18,7 @@ import Section04 from './components/Section04';
 import  Event  from './components/pages/event/event';
 import Book from './components/pages/event/components/Book';
 import SpclAnmls from "./components/pages/SPECIAL_ANIMALS/Special.jsx";
+import Footer from './components/pages/event/components/Footer.jsx';
 
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
               <Container />
               <Section03 />
               <Section04 />
-              
+              <Footer/>
               
             </>
           } />

@@ -4,10 +4,12 @@ import Events from './events.jsx'
 
 function container() {
   return (
-    <div className="Container">
-        <Events></Events>
-        <Events></Events>
-        <Events></Events>
+    <div className="eventcontainer">
+      <div className="Container">
+        <Events />
+        <Events />
+        <Events />
+      </div>
     </div>
   )
 }

@@ -1,21 +1,23 @@
-body{
+body {
     margin: 0;
     padding: 0;
+    align-items: center;
+    align-content: center;
 }
 
-#container{
-    /* margin-top: 600px; */
-    
+#container {
     background-color: rgb(217, 217, 217);
-    height: 300px;
+    height: auto; /* Adjusted to allow for content height */
+    padding: 20px; /* Add some padding for better appearance */
 }
 
-
-.heading{
-    padding-top: 10px;
+.heading {
+    padding-top: 1px;
 }
-#para{
-    margin-top: 20px;
+
+#para {
+    margin-top: 0px;
+    margin-bottom: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     text-decoration: solid;
@@ -24,40 +26,34 @@ body{
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: bold;
-    
 }
 
-.boxes{
-    padding-left: 200px;
-    padding-right: 200px;
+.boxes {
     display: flex;
-    gap: 150px;
+    flex-wrap: wrap; /* Allows wrapping of boxes to next line */
+    gap: 150px; /* Gap between boxes */
+    justify-content: center; /* Center the boxes */
 }
-#box1{
-    
-    height: 200px ;
+
+/* Styles for individual boxes */
+#box1,
+#box2 {
+    height: 200px;
     width: 400px;
-    background-image: url(77005.jpg);
+    background-image: url(77005.jpg); /* Set default image for box1 */
     background-size: cover;
-    background-color: rgb(117, 117, 117) ;
+    background-color: rgb(117, 117, 117);
     border: 2px solid black;
     border-radius: 15px;
-
-
+    padding-top: 5px;
 }
 
-#box2{
-    height: 200px ;
-    width: 400px;
-    background-image: url(know.jpg);
-    background-size: cover;
-    background-color: rgb(117, 117, 117) ;
-    border: 2px solid black;
-    border-radius: 15px;
-
+#box2 {
+    background-image: url(know.jpg); /* Set image for box2 */
 }
 
-#para_box1{
+#para_box1,
+#para_box2 {
     color: rgb(239, 239, 239);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -65,9 +61,9 @@ body{
     letter-spacing: 3px;
 }
 
-#quiz{
-    margin: 100px 100px 0 100px;
-
+#quiz,
+#about {
+    margin: 130px auto;
     height: 30px;
     width: 200px;
     background-color: rgb(120, 140, 174);
@@ -79,34 +75,43 @@ body{
     font-weight: bold;
     color: rgb(239, 239, 239);
     box-shadow: 0 0 20px rgb(26, 67, 113);
-      
-    
+    display: block; 
 }
 
-#para_box2{
-    color: rgb(239, 239, 239);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 3px;
-}
+/* Responsive styles */
+@media (max-width: 768px) {
+    .boxes {
+        flex-direction: column; /* Stack boxes vertically */
+        gap: 20px; /* Reduce gap on mobile */
+        align-items: center; /* Center align boxes */
+    }
 
-#about{
-    margin: 100px 100px 0 100px;
-    /* margin-left: ; */
-    height: 30px;
-    width: 200px;
-    background-color: rgb(120, 140, 174);
-    border: 2px solid transparent;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 15px;
-    font-weight: bold;
-    color: rgb(239, 239, 239);
-    box-shadow: 0 0 20px rgb(26, 67, 113);
+    #box1, #box2 {
+        /* width: 70%; 
+        max-width: 400px; */
+        height: 100px;
+        width: 200px;
+    }
 
-    
-    
-    
+    /* Optionally adjust font sizes for mobile */
+    #para {
+        margin-top:0;
+        font-size: 12px;
+    }
+
+    #para_box1,
+    #para_box2 {
+        font-size: 8px;
+    }
+
+    #quiz,
+    #about {
+        align-items: center;
+        margin-top: 50px;
+        width: 80%; 
+        font-size: 11px;
+        height: 20px;
+        width: 150px;
+
+    }
 }
