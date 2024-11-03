@@ -6,115 +6,126 @@ body {
 .Container {
   width: 100%;
   background-color: rgb(0, 53, 52);
-  height: flex;
   display: flex;
   justify-content: center;
-  overflow-x:s; /* Enable horizontal scrolling */
-  overflow-y: hidden; /* Prevent vertical scrolling */
-  padding: 10px; /* Add some padding for better UX */
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.625rem;
+  column-gap: 5rem;
+  scroll-snap-type: x mandatory; /* Smooth snap to cards */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
 }
 
 .eventname {
   text-align: left;
-  padding: 0vw;
-  padding-left: 25px;
+  font-size: 1.4rem;
+  padding-left: 1.5625rem;
+  padding-top: 0.5rem;
+  text-transform: uppercase;
 }
 
 .event-card {
   background-color: rgb(24, 24, 24);
   color: white;
-  display: inline-block; 
-  margin: 2vw 5vw;
-  width: 250px;
-  height: flex;
-  border-radius: 20px;
+  display: inline-block;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 1.25rem;
   overflow: hidden;
   text-align: center;
+  align-items: center;
+  scroll-snap-align: start; /* Aligns each card for smooth scroll */
 }
 
 .event-image {
   width: 80%;
-  height: 40%;
+  height: auto;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 0.625rem;
+  display: block;
+  margin: 0 auto;
 }
 
 .event-details {
-  margin: 0vw;
-  padding: 0vw;
+  margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1vw;
+  font-size: 0.625rem;
   text-align: center;
 }
 
 .register-btn {
-  background: rgb(0,0,0);
   background: linear-gradient(90deg, rgb(22, 110, 196) 40%, rgb(7, 50, 92) 100%);
-  color: rgb(255, 255, 255);
-  padding: 0.4vw;
-  padding-left: 2vw;
-  padding-right: 2vw;
+  color: white;
+  padding: 0.25rem 1.5rem;
   border: none;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
   cursor: pointer;
-  margin: 1vw;
+  margin: 0.625rem;
 }
 
 .date {
   color: white;
-  font-size: 120%;
-  margin: 0%;
-  padding: 0%;
-  padding-top: 5px;
-  padding-left: 23px;
+  font-size: 1rem;
+  padding-top: 0.3125rem;
+  padding-left: 1.5625rem;
   text-align: left;
 }
 
 .time {
   color: white;
-  font-size: 70%;
-  margin: 0%;
-  padding: 0%;
-  padding-left: 23px;
+  font-size: 0.6rem;
+  padding-left: 1.5625rem;
   text-align: left;
+  margin-top: 0;
 }
 
-/* Media query for smaller screens */
+
 @media (max-width: 768px) {
   .Container {
-      height: auto;
-      flex-direction: column;
-      flex-wrap: nowrap; /* Prevent wrapping */
-      padding: 0;
-      width: 100%;
-      background-color: rgb(0, 53, 52);
-      justify-content: center;
-      overflow-x:scroll; /* Enable horizontal scrolling */
-      overflow-y: scroll; /* Prevent vertical scrolling */
-      padding: 10px; /* Add some padding for better UX */
-      
+    padding: 1rem;
+    column-gap: 3rem; /* Adjusted gap for mobile */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .event-card {
-      width: 250px;
-      height: auto;
-      margin: 2vw 5vw;
-      background-color: rgb(24, 24, 24);
-      color: white;
-      display: inline-block; 
-      margin: 2vw 2vw;
-      min-width: 18vw;
-      height: flex;
-      border-radius: 20px;
-      overflow: hidden;
-      text-align: center;
+    width: 28rem; /* 40% larger than original 20rem */
+    height: 28rem; /* 40% larger than original 20rem */
+    border-radius: 1.75rem; /* Increased border radius proportionally */
+  }
+
+  .eventname {
+    font-size: 2rem; /* Increased from 1.4rem */
+    padding-left: 2.2rem; /* Increased padding proportionally */
+    padding-top: 0.7rem;
+  }
+
+  .event-image {
+    width: 85%; /* Slightly larger percentage for better mobile display */
   }
 
   .event-details {
-      font-size: 3vw; /* Increase font size for better readability on smaller screens */
+    font-size: 0.875rem; /* Increased from 0.625rem */
   }
 
   .register-btn {
-      font-size: 3vw; /* Adjust button text size for smaller screens */
+    padding: 0.35rem 2.1rem; /* Increased padding */
+    border-radius: 1.3125rem; /* Increased border radius */
+    font-size: 1.2rem; /* Larger text for button */
+    margin: 0.875rem;
+  }
+
+  .date {
+    font-size: 1.4rem; /* Increased from 1rem */
+    padding-top: 0.44rem;
+    padding-left: 2.2rem;
+  }
+
+  .time {
+    font-size: 0.84rem; /* Increased from 0.6rem */
+    padding-left: 2.2rem;
   }
 }

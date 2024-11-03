@@ -1,0 +1,10 @@
+/* src/index.css */
+.no-scrollbar {
+  overflow: scroll;
+  scrollbar-width: none; /* For Firefox */
+}
+
+/* For Chrome, Safari, Edge */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
