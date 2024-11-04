@@ -19,6 +19,7 @@ import  Event  from './components/pages/event/event';
 import Book from './components/pages/event/components/Book';
 import SpclAnmls from "./components/pages/SPECIAL_ANIMALS/Special.jsx";
 import Footer from './components/pages/event/components/Footer.jsx';
+import Admin from './components/Admin/Admin.jsx';
 
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
           <Route path="/Event" element={<Event />} />
           <Route path="/book" element={<Book />} />
           <Route path="/SpecialAnimals" element={<SpclAnmls />} />
+          <Route path="/Admin" element={<Admin />} />
 
         </Routes>
       </Router>
