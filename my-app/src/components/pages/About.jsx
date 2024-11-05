@@ -10,7 +10,7 @@ const About = () => {
     <div  className=' w-full'>
         <img className='w-full h-[500px] object-fill' src="https://wallpapercave.com/wp/wp9173690.jpg" alt="animal" />
     </div>
-    <div className=''><p className='absolute inset-0 flex justify-center items-center pr-[700px] pb-[200px] font-semibold  text-[60px] text-yellow-300 '>This is my about section</p></div>
+    <div className=''><p className='absolute inset-0 flex justify-center items-center pr-[700px] pb-[100px] font-serif  text-[60px] text-yellow-200 font-extrabold '>This is my about section</p></div>
     
 
     <div className='mt-[30px] grid grid-cols-2 pb-[50px]'>
