@@ -1,33 +1,56 @@
 import React, { useState } from 'react';
 import './Login2.css'
 import { FaUserCircle, FaLock } from "react-icons/fa";
+import axios from 'axios';
+// import toast, { Toaster } from 'react-hot-toast';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 export const Login2 = () => {
     // State to manage form input values
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [email, setEmai] = useState('')
+
+    //acces backend 
+    const client = axios.create({
+        baseURL: "/api"
+    })
 
     const handleData = async (e) => {
         e.preventDefault();
 
-        const response = await fetch('http://localhost:5000/login2', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ username, password })
-        });
 
-        if (response.ok) {
-            window.location.href = 'http://localhost:5173';
-            console.prompt('account created successfully')
-        } else {
-            console.error('Failed to create account');
-        }
+        client.post('/api/signup', {
+            username: username,
+            email: email,
+            password: password
+        })
+            .then((response) => {
+                console.log(response.message);
+                toast.success("Signup successful!", {
+                    position: "top-right",
+                    style: { width: "30vw" },
+                    autoClose: 3000
+                })
+
+            })
+            .catch((err) => {
+                console.log(err.response.data.message)
+                toast.error(err.response.data.message, {
+                    position: "top-right",
+                    style: { width: "30vw" },
+                    autoClose: 3000
+                });
+            })
+
+
     }
     return (
         <div className='whole'>
             <div className='wrapper'>
+                <ToastContainer />
                 <form onSubmit={handleData} >
                     <h1>Sign Up</h1>
                     <div className='input-box'>
@@ -42,8 +65,8 @@ export const Login2 = () => {
                     <div className='input-box'>
                         <input type="text"
                             placeholder='Enter Email'
-                            value={username}
-                            onChange={(e) => setUsername(e.target.value)}
+                            value={email}
+                            onChange={(e) => setEmai(e.target.value)}
                             required />
                         <FaUserCircle className='icon' />
                     </div>
