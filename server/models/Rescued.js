@@ -14,6 +14,7 @@ const rescuedAnimalSchema=mongoose.Schema({
 },
   SexRatio: {
     type: Number,
+    required:true
     
 },
 RecievedFrom:{
