@@ -1,0 +1,25 @@
+.mycardcomponent{
+    color: white;
+    font-size: large;
+    text-align: center;
+  }
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://www.ashishkamble.com/wp-content/uploads/2021/11/Let-there-be-Light-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  

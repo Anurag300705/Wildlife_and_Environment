@@ -20,6 +20,7 @@ import Book from './components/pages/event/components/Book';
 import SpclAnmls from "./components/pages/SPECIAL_ANIMALS/Special.jsx";
 import Footer from './components/pages/event/components/Footer.jsx';
 import Admin from './components/Admin/Admin.jsx';
+import Photography from './components/photography/photosubmitpage.jsx';
 
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
           <Route path="/book" element={<Book />} />
           <Route path="/SpecialAnimals" element={<SpclAnmls />} />
           <Route path="/Admin" element={<Admin />} />
+          <Route path="/Photography" element={<Photography />} />
 
         </Routes>
       </Router>
