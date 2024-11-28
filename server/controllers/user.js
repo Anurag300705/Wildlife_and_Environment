@@ -75,8 +75,13 @@ const register = async (req, res) => {
 
 }
 
-// const verifyUser = tryCatch(async (req, res) => {
+const login = async (req,res) =>{
+    
+}
+
+// const verifyUser = async (req, res) => {
 //     const { otp, activationToken } = req.body;
+
 
 //     const verify = jwt.verify(activationToken, process.env.SECRET_KEY)
 
@@ -104,5 +109,9 @@ const register = async (req, res) => {
 //         message: "User registered"
 //     })
 
-// })
-module.exports = register
+// }
+
+const myProfile = (req, res) => {
+    res.send("Hello")
+}
+module.exports = { register, myProfile }

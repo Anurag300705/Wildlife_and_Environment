@@ -2,29 +2,46 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
 import './LoginForm.css';
 import { FaUserCircle, FaLock } from "react-icons/fa";
+import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const LoginForm = () => {
     // State to manage form input values
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
+
+    const client = axios.create({
+        baseURL: "/api"
+    })
+
     const handleData = async (e) => {
         e.preventDefault();
 
-        const response = await fetch('http://localhost:5000/login', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ username, password })
-        });
 
-        // if (response.ok) {
-        //     window.location.href = 'http://localhost:5173';
-        //     console.prompt('account created successfully')
-        // } else {
-        //     console.error('Failed to create account');
-        // }
+        client.post('/api/login', {
+            username: username,
+            password: password
+        })
+            .then((response) => {
+                console.log(response);
+                toast.success("hello", {
+                    position: "top-right",
+                    style: { width: "30vw" },
+                    autoClose: 3000
+                })
+
+            })
+            .catch((err) => {
+                console.log(err.response.data.message)
+                toast.error(err.response.data.message, {
+                    position: "top-right",
+                    style: { width: "30vw" },
+                    autoClose: 3000
+                });
+            })
+
     }
     return (
         <div className='whole'>
@@ -40,7 +57,7 @@ export const LoginForm = () => {
                         <FaUserCircle className='icon' />
                     </div>
 
-                   
+
 
                     <div className='input-box'>
                         <input type="password"
