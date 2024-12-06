@@ -30,10 +30,12 @@ app.get('/', (req, res) => {
 
 app.use('/api/', require('./routes/user')
 )
+app.use('/api', require('./routes/admin'))
 
 app.use('/new_born', require('./routes/newBorn')
 )
 app.use('/api/login', require('./routes/login'))
+
 
 
 
