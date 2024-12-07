@@ -1,8 +1,30 @@
 import React, { useState } from "react";
 
 import Drop from "./Dropdown";
+import axios from "axios";
 export default function Admin() {
   const [selectedForm, setSelectedForm] = useState(null);
+  const [Name, setName] = useState('');
+  const [Image, setImage] = useState(null);
+  const HandleFileChange = (e) => {
+    setImage(e.target.files[0]);
+  }
+  
+  const client = axios.create({baseURL : "/api"});
+  const handleData = async(e) => {
+    e.preventDefault();
+    const formdata = new FormData();
+    formdata.append('avatar', Image)
+    client.post('/api/event', formdata , {
+      headers : {
+        'Content-Type' : 'multipart/form-data'
+      }
+    }).then((res) => {
+        console.log(res);
+    } ).catch((err) => {
+      console.log(err);
+  } )
+  }
   const handleSelect = (formType) => {
     setSelectedForm(formType);
   };
@@ -43,7 +65,7 @@ export default function Admin() {
             <label className="block mb-2">
               Date of rescue:
               <input
-                type="email"
+                type="text"
                 name="Date"
                 className="block w-full mt-1 p-2 border rounded"
               />
@@ -108,6 +130,53 @@ export default function Admin() {
               <input
                 type="email"
                 name="RecievedFrom"
+                className="block w-full mt-1 p-2 border rounded"
+              />
+            </label>
+            <button
+              type="submit"
+              className="bg-blue-500 text-white px-4 py-2 rounded mt-2"
+            >
+              Submit
+            </button>
+          </form>
+        );
+        case "form4":
+        return (
+          <form className="p-4 border rounded mt-4" onSubmit={handleData} >
+            <h3 className="text-lg font-semibold mb-2">Events</h3>
+            <label className="block mb-2">
+              Name
+              <input
+                value={Name}
+                onChange={(e) => setName(e.target.value)}
+                type="text"
+                name="Name"
+                className="block w-full mt-1 p-2 border rounded"
+              />
+              Image
+              <input
+                onChange = {HandleFileChange}
+                type="file"
+                name="Location"
+                className="block w-full mt-1 p-2 border rounded"
+              />
+              Location:
+              <input
+                type="email"
+                name="Date"
+                className="block w-full mt-1 p-2 border rounded"
+              />
+              Date:
+              <input
+                type="email"
+                name="Date"
+                className="block w-full mt-1 p-2 border rounded"
+              />
+              Time:
+              <input
+                type="email"
+                name="Time"
                 className="block w-full mt-1 p-2 border rounded"
               />
             </label>
@@ -220,6 +289,14 @@ export default function Admin() {
                   onClick={() => handleSelect("form3")}
                 >
                   Exchange
+                </button>
+              </li>
+              <li>
+                <button
+                  className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-200"
+                  onClick={() => handleSelect("form4")}
+                >
+                  Events
                 </button>
               </li>
             </ul>
