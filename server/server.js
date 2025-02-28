@@ -36,6 +36,8 @@ app.use('/new_born', require('./routes/newBorn')
 )
 app.use('/api/login', require('./routes/login'))
 
+app.use('/api/animal', require('./routes/animal'))
+
 
 
 

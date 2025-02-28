@@ -5,13 +5,15 @@ import axios from 'axios';
 // import toast, { Toaster } from 'react-hot-toast';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+// import 
+// import useNavigate from 'react-router-dom';
 
 export const Login2 = () => {
     // State to manage form input values
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [email, setEmai] = useState('')
+    const navigate = useNavigate();
 
     //acces backend 
     const client = axios.create({
@@ -34,7 +36,7 @@ export const Login2 = () => {
                     style: { width: "30vw" },
                     autoClose: 3000
                 })
-
+                navigate('/login')
             })
             .catch((err) => {
                 console.log(err.response.data.message)
@@ -92,4 +94,4 @@ export const Login2 = () => {
     )
 }
 
-export default Login2;
+// export default Login2;
