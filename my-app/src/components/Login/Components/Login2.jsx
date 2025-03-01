@@ -11,7 +11,7 @@ export const Login2 = () => {
     // State to manage form input values
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const [email, setEmai] = useState('')
+    const [email, setEmail] = useState('')
 
     //acces backend 
     const client = axios.create({
@@ -22,7 +22,7 @@ export const Login2 = () => {
         e.preventDefault();
 
 
-        client.post('/api/signup', {
+        client.post('/api/v1/user/signup', {
             username: username,
             email: email,
             password: password
@@ -66,7 +66,7 @@ export const Login2 = () => {
                         <input type="text"
                             placeholder='Enter Email'
                             value={email}
-                            onChange={(e) => setEmai(e.target.value)}
+                            onChange={(e) => setEmail(e.target.value)}
                             required />
                         <FaUserCircle className='icon' />
                     </div>
