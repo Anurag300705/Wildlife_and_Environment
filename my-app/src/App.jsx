@@ -11,7 +11,7 @@ import Section03 from './components/Section03';
 import Exchange from "./components/pages/EXCHANGE_COMP/EXCHANGE";
 import Rescue from "./components/pages/RESCUE_COMP/RESCUE";
 import LoginForm from './components/Login/Components/LoginForm';
-import Login2 from './components/Login/Components/Login2';
+import {Login2} from './components/Login/Components/Login2';
 import Forgot from './components/Login/Components/Forgot';
 import './index.css';
 import Section04 from './components/Section04';
